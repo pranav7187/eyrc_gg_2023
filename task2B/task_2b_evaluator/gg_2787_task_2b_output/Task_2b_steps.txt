@@ -1,0 +1,24 @@
+Team ID = 2787
+Trained weights drive link = https://drive.google.com/file/d/16mp7oERV3FWPVfHrJmi9T9yEM7WQXeux/view?usp=sharing
+
+###############################################################################
+'''
+Please write the complete steps taken by your team explaining how you completed Task 2B. It is adviced to be as elaborate as possible.
+
+1. We collected image data from different sources using image scraping tools since the default data provided was inadequate to train our model effectively.
+
+2. We organized the collected data into separate train and test folders, with each folder containing subfolders representing the different labels of the images, ensuring a well-structured dataset.
+
+3.We imported all the necessary Python libraries, including torch, PIL, numpy, and matplotlib, to facilitate data manipulation and visualization.
+
+4.Using torchvision transforms, we converted the images into machine-readable tensors and an iterable format to prepare them for input into our algorithm.
+
+5.To standardize the input data and prevent overfitting, we resized all the images to 300x300 size. Additionally, we applied various random image transformations, such as rotation, random zooms, and shifting, to augment the dataset and enhance the model's robustness.
+
+6. We loaded the preprocessed images into a data loader, creating batches of 32 images, each accompanied by its corresponding label. This allowed us to efficiently handle the data during the training process.
+
+7.  we incorporated a pre-trained EfficientNet from TorchVision, leveraging its powerful feature extraction capabilities and fine-tuning the network to our specific image classification task.
+
+
+8. We trained the model for 5 epochs, ensuring that the model learned from the data and gradually improved its performance over each epoch. Monitoring and managing overfitting during the training process were crucial to ensuring the model's accuracy and generalization capability.
+
